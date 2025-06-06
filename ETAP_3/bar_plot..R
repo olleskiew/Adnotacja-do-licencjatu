@@ -11,15 +11,25 @@ GO_data_processed <- dane %>%
   left_join(annotations %>% select(Plik, Cluster, Biological_process),
             by = c("Plik", "Cluster"))
 
+
 summed <- GO_data_processed %>% 
   group_by(Biological_process, Plik) %>% 
-  mutate(Condition = case_when(
-    Plik %in% c(1, 4, 6) ~ "G-CSF",
-    Plik %in% c(7, 8) ~ "Kontrola",
-    TRUE ~ "klastry wspólne")
-         )
   summarise(Suma = sum(Count)) %>% 
+  mutate(Condition = case_when(
+    Plik %in% c("1", "4", "6") ~ "G-CSF",
+    Plik %in% c("7", "8") ~ "Kontrola",
+    TRUE ~ "klastry wspólne")
+  ) %>% 
   ungroup()
 
+View(GO_data_processed)
 
+ggplot(summed, aes(x=Suma, y=Biological_process, fill=Condition))+
+  geom_bar(stat = "identity")+
+  labs(
+    title = "Analiza wzbogacenia",
+    x = "Suma zliczeń",
+    y = "Proces biologiczny"
+  )+
+  theme_minimal()
 #sessionInfo()
