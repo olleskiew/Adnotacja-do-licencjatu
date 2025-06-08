@@ -10,8 +10,8 @@ OUT_DIR    = Path("filtered_markers")
 
 MIN_IN_GROUP_FRAC  = 0.25
 MAX_OUT_GROUP_FRAC = 0.50
-MIN_LOG_FC         = 0.65  # zmieniono z 1.0 na 0.65
-COMPARE_ABS        = True  # nowy parametr
+MIN_LOG_FC         = 0.65  
+COMPARE_ABS        = True  
 
 def main():
     t0 = time.perf_counter()
@@ -57,7 +57,6 @@ def main():
         dfg = flt[flt["group"] == g]
         dfg.to_csv(OUT_DIR / f"markers_cluster_{g}.csv", index=False)
 
-    print(f"✅ Gotowe w {time.perf_counter()-t0:,.1f} s")
 
 if __name__ == "__main__":
     main()
