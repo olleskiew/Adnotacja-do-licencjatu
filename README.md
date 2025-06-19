@@ -13,7 +13,7 @@ Celem pracy było porównanie transkryptomu neutrofili pobranych z krwi obwodowe
 - pacjentów zdrowych
 - pacjentów, którze zostali poddani terapi czynnikiem stymulującycm tworzenie kolonii granulocytów (z ang. Granulocyte colony-stimulating factor, G-CSF)
 
-Szaczegółowe informacje dotyczące pobrania danych znajdują się w pliku [_Załącznik_1.pdf_]()
+Szaczegółowe informacje dotyczące pobrania danych znajdują się w pliku ETAP1.pdf
 
 ### Aspekty bioinformatyczne pracy:
 1. Przeprowadzenie części analizy za pośrenictwem bioinformatycznej platformy [GALAXY](https://usegalaxy.eu)
