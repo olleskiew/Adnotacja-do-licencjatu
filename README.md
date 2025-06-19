@@ -1,5 +1,5 @@
 # Adnotacja do licencjatu
-To repozytorium zawiera kod wykorzystany do analizy różnic w transkryptomie neutrofili pochodzących od zdrowych dawców i od dawców podanych terapii G-CSF. Praca licencjacka została wykonana pod opieką Pani Profesor Joanny Cichy i Pani Doktor Kamili Kwiecień
+To repozytorium zawiera kod wykorzystany do analizy różnic w transkryptomie neutrofili pochodzących od zdrowych dawców i od dawców podanych terapii G-CSF. Praca licencjacka została wykonana w Zakładzie Immunologii
 
 
 # Spis terści:
