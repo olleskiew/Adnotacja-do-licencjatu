@@ -21,18 +21,11 @@ Szaczegółowe informacje dotyczące pobrania danych znajdują się w pliku [_Za
 3. Praca z wykorzystaniem bioinformatycznego narzędzia [DAVID](https://davidbioinformatics.nih.gov/) do analizy funkcjonalnej genów
 4. Wizualizacja wyników za pośrednictwem skryptów w Pythonie i R
 
-
 # Pliki
-  To repozytorium składa się z następujących folderów:
-  - ETAP_0:
-    - Plik [_Załącznik_1.pdf_]() - załącznik do licencjatu, w którym znajdują się informacje dotyczące próbek i szczegółowe parametry wykorzystane przy analizie danych za pośrednictwem platformy [GALAXY](https://usegalaxy.eu)
+To repozytorium składa się z 5 folderów
+- ETAP_1 - zawierający pdf, z opisem skąd zostały pobrane próbki oraz parametry narzędzi użytych na serwerze Galaxy
+- ETAP_2 - zawierajacy kod, służący do dodanie metadanych do pliku Anndata z etapu 1
+- ETAP_3 - zawierajacy pdf, ze szczegółowymi parametrami narzędzi użytych na serwerze Galaxy
+- ETAP_4 - zawierający kod w Pythonie i R służący do wizualizacji danych w postaci wykresu punktowego (dotplot)
+- ETAP_5 - zawierajacy kod w R, który służył do wykonania i wizualizacji wyników analizy wzbogacenia przy użyciu narzędzia DAVID
 
-  - ETAP_1:
-    - Plik [_Kod1.1_filtrowanie.py_]()
-    - Plik [_Kod1.2_lista_genow.R_]()
-    - Plik [_Kod1.3_dotplot.py_]()
-
-  - ETAP_2:
-    - Plik [_Kod2.1_DAVID_to_csv.R_]()
-    - Plik [_Kod2.2_Annotacja_klastrów.R_]()
-    - Plik [_Kod2.3_wykresy.R_]()
