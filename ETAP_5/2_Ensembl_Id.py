@@ -15,7 +15,7 @@ for (file_path in file_list){
   headers <- colnames(file)
   
   number_of_genes <- c(number_of_genes, nrow(file))
-  
+ #Odfiltowywujemy tylko 3000 genów, ponieważ taką maksymalną liczbę przyjmuję DAVID 
   filtered_file <- file %>% 
     filter(abs(logfoldchanges) >0.65, pvals_adj <0.05) %>% 
     slice_head(n = 3000)
